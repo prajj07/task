@@ -108,7 +108,7 @@ export const useWorkflow = () => {
           if (input) {
             setButtonState((prev) => ({
               ...prev,
-              displayedText: `${action.config.prefix}${input}`,
+              displayedText: `Hello, ${action.config.prompt}${action.config.prefix}${input}`,
             }));
           }
           break;

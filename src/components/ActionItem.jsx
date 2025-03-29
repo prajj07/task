@@ -237,7 +237,7 @@ const ActionItem = ({ action, onUpdate, onRemove }) => {
         return (
           <>
             <InputGroup>
-              <InputLabel>Prompt Message</InputLabel>
+              <InputLabel>Prompt Message (e.g., "Enter your name")</InputLabel>
               <Input
                 type="text"
                 value={config.prompt}
@@ -251,9 +251,20 @@ const ActionItem = ({ action, onUpdate, onRemove }) => {
                 type="text"
                 value={config.prefix}
                 onChange={(e) => handleConfigChange('prefix', e.target.value)}
-                placeholder="Enter text prefix..."
+                placeholder="Enter display format..."
               />
             </InputGroup>
+            <div style={{ 
+              fontSize: '0.875rem', 
+              color: 'var(--text-secondary)', 
+              marginTop: '0.5rem',
+              padding: '0.75rem',
+              background: 'var(--background-color)',
+              borderRadius: '0.5rem',
+              border: '1px solid var(--border-color)'
+            }}>
+              Output will be displayed as: Hello, "{config.prompt}"  "{config.prefix}[user input]"
+            </div>
           </>
         );
       case 'changeButtonColor':
