@@ -1,12 +1,1 @@
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Built a dynamic 2-page React app that allows users to configure and execute custom button workflows. The Config Page enables setting the button label and sequencing actions like alerts, prompts, showing images/text, localStorage manipulation, and more. The Output Page displays a single button that executes the defined actions in order. Utilized localStorage for state persistence and ensured fully dynamic, modular behavior without hardcoding workflows. Designed a clean, component-based UI with runtime workflow updates.
